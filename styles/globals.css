@@ -2,7 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body, h1, h2 {
+  @apply font-mono;
+}
+
 /* COMPONENTS */
+/* Headers */
+h1, h2 {
+  @apply font-light;
+  @apply tracking-wide;
+}
+
+h1 {
+  @apply text-3xl;
+}
+
+h2 {
+  @apply text-2xl;
+}
+
 /* Buttons */
 .btn {
   @apply font-bold py-2 px-4 rounded;
