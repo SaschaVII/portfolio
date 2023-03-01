@@ -12,9 +12,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: colors.blue,
-        secondary: colors.amber,
-        tertiary: colors.rose
+        primary: colors.zinc,
+        secondary: colors.zinc
       },
       fontFamily: {
         mono: ['var(--font-robotoMono)', ...fontFamily.mono]

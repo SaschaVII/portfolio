@@ -23,53 +23,21 @@ h2 {
 
 /* Buttons */
 .btn {
-  @apply font-bold py-2 px-4 rounded;
+  @apply font-bold py-2 px-4;
 }
 
 /* Primary */
 .btn-primary {
-  @apply bg-primary-500 text-white;
+  @apply bg-primary-900 text-white;
 }
 .btn-primary:hover {
-  @apply bg-primary-600;
-}
-
-/* Primary Outlined */
-.btn-primary-outlined {
-  @apply font-semibold bg-transparent text-primary-700 border-primary-500 border;
-}
-.btn-primary-outlined:hover {
-  @apply bg-primary-500 text-white border-transparent;
+  @apply bg-primary-500;
 }
 
 /* Secondary */
 .btn-secondary {
-  @apply bg-secondary-500 text-white;
+  @apply border-b-2 border-primary-400 py-1 px-1;
 }
 .btn-secondary:hover {
-  @apply bg-secondary-600;
-}
-
-/* Secondary Outlined */
-.btn-secondary-outlined {
-  @apply font-semibold bg-transparent text-secondary-700 border-secondary-500 border;
-}
-.btn-secondary-outlined:hover {
-  @apply bg-secondary-500 text-white border-transparent;
-}
-
-/* Tertiary */
-.btn-tertiary {
-  @apply bg-tertiary-500 text-white;
-}
-.btn-tertiary:hover {
-  @apply bg-tertiary-600;
-}
-
-/* Tertiary Outlined */
-.btn-tertiary-outlined {
-  @apply font-semibold bg-transparent text-tertiary-700 border-tertiary-500 border;
-}
-.btn-tertiary-outlined:hover {
-  @apply bg-tertiary-500 text-white border-transparent;
+  @apply border-primary-900;
 }
