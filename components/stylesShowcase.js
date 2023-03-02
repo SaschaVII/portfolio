@@ -27,11 +27,11 @@ const StylesShowcase = () => (
                 </div>
             </div>
         </section>
-        <nav className="flex gap-10">
-                <a className="text-primary-400 hover:text-primary-900 before:content-['<'] after:content-['_/>']" href="#">About Me</a>
-                <a className="text-primary-400 hover:text-primary-900 before:content-['<'] after:content-['_/>']" href="#">Experience</a>
-                <a className="text-primary-400 hover:text-primary-900 before:content-['<'] after:content-['_/>']" href="#">Work</a>
-                <a className="text-primary-400 hover:text-primary-900 before:content-['<'] after:content-['_/>']" href="#">Contact</a>
+        <nav className="flex flex-col gap-10 sm:flex-row-reverse">
+                <a className="text-primary-400 hover:text-primary-900 before:content-['<'] after:content-['_/>'] whitespace-nowrap" href="#">About Me</a>
+                <a className="text-primary-400 hover:text-primary-900 before:content-['<'] after:content-['_/>'] whitespace-nowrap" href="#">Experience</a>
+                <a className="text-primary-400 hover:text-primary-900 before:content-['<'] after:content-['_/>'] whitespace-nowrap" href="#">Work</a>
+                <a className="text-primary-400 hover:text-primary-900 before:content-['<'] after:content-['_/>'] whitespace-nowrap" href="#">Contact</a>
         </nav>
     </div>
 );
