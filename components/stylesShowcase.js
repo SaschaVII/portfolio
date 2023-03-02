@@ -1,4 +1,5 @@
 import Button from "./button";
+import MainNav from "./mainNav";
 import ProjectCard from "./projectCard";
 
 const StylesShowcase = () => (
@@ -17,12 +18,7 @@ const StylesShowcase = () => (
         <section className="mb-4">
             <h1 className="mb-2">Main Nav</h1>
             <div className="pl-4">
-                <nav className="flex flex-col gap-10 sm:flex-row-reverse">
-                        <a className="text-primary-400 hover:text-primary-900 before:content-['<'] after:content-['_/>'] whitespace-nowrap" href="#">About Me</a>
-                        <a className="text-primary-400 hover:text-primary-900 before:content-['<'] after:content-['_/>'] whitespace-nowrap" href="#">Experience</a>
-                        <a className="text-primary-400 hover:text-primary-900 before:content-['<'] after:content-['_/>'] whitespace-nowrap" href="#">Work</a>
-                        <a className="text-primary-400 hover:text-primary-900 before:content-['<'] after:content-['_/>'] whitespace-nowrap" href="#">Contact</a>
-                </nav>
+                <MainNav title="Sascha Kuhness" />
             </div>
         </section>
 
