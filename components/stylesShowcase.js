@@ -1,16 +1,14 @@
+import Button from "./button";
+
 const StylesShowcase = () => (
     <div>
         <h1 className="mb-2">Components</h1>
         <section className="mb-2">
             <div className="pl-4">
-                <h2>Button</h2>
+                <h2>Buttons</h2>
                 <div className="pl-4">
-                    <div className="mb-2">
-                        <button className="btn btn-primary mr-2">Primary</button>
-                    </div>
-                    <div className="mb-2">
-                        <button className="btn btn-secondary mr-2">Secondary</button>
-                    </div>
+                    <Button>Primary</Button>
+                    <Button type="secondary">Secondary</Button>
                 </div>
             </div>
         </section>
