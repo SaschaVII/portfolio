@@ -49,13 +49,13 @@ const StylesShowcase = () => {
             <section className="mb-4">
                 <h1 className="mb-2">Project Card</h1>
                 <div className="pl-4 flex gap-10 flex-wrap">
-                    <ProjectCard title="Project Title" thumbnailSrc="./placeholder375x375.png">
+                    <ProjectCard title="Project Title" thumbnailSrc="https://placekitten.com/375/375">
                         <p>
                             Irure occaecat mollit sunt consectetur aliqua minim culpa officia voluptate ipsum in adipisicing consequat est. Ex do enim laboris excepteur sunt officia cupidatat cillum. Proident et eu aliqua consectetur duis qui reprehenderit incididunt.
                         </p>
                         <Button className="mt-2">Open GitHub</Button>
                     </ProjectCard>
-                    <ProjectCard title="Project Title" thumbnailSrc="./placeholder375x375.png">
+                    <ProjectCard title="Project Title" thumbnailSrc="https://placekitten.com/375/375">
                         <p>
                             Proident eiusmod dolore veniam sint duis sit et quis ut enim duis elit amet consequat. Labore anim ea sit ut. Ex est irure culpa fugiat id. Fugiat eiusmod commodo occaecat duis irure eu dolore et ut tempor. Esse qui commodo minim eiusmod ea magna labore Lorem commodo ullamco. Elit pariatur commodo occaecat commodo magna aliquip. Laborum magna eiusmod et sunt amet laboris in.
                         </p>
