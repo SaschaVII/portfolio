@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
-        <div className='container mx-auto px-8 pt-2'>
+        <div className='container mx-auto px-36 pt-2'>
           <Main />
           <NextScript />
         </div>

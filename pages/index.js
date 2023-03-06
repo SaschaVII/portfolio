@@ -1,7 +1,9 @@
-import StylesShowcase from "@/components/stylesShowcase";
+import MainNav from "@/components/mainNav";
 
 export default function Home() {
   return (
-    <StylesShowcase />
+    <>
+      <MainNav title="Sascha Kuhness" />
+    </>
   )
 }

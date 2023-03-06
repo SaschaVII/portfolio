@@ -12,7 +12,7 @@ const StylesShowcase = () => {
     ];
 
     return (
-        <div>
+        <>
             <h1 className="mb-2">Components</h1>
             <section className="mb-2">
                 <div className="pl-4">
@@ -73,7 +73,7 @@ const StylesShowcase = () => {
                     <div>FaGlobe <FaGlobe /></div>
                 </div>
             </section>
-        </div>
+        </>
     );
 };
 
