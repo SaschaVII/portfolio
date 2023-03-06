@@ -1,4 +1,17 @@
-const MainNav = ({ title, navItems }) => {
+import { useEffect, useState } from "react";
+import { FaMoon, FaSun } from "react-icons/fa";
+
+const MainNav = ({ title, navItems, showDarkMode }) => {
+    // States
+    const [darkModeEnabled, setDarkModeEnabled] = useState(false);
+
+    useEffect(() => {
+        if (darkModeEnabled) document.querySelector('html').classList.add('dark');
+        else document.querySelector('html').classList.remove('dark');
+    }, [darkModeEnabled]);
+
+    const darkModeBtnText = darkModeEnabled ? <><FaSun /> Light Mode</> : <><FaMoon /> Dark Mode</>;
+
     return (
         <nav className="flex flex-col sm:flex-row justify-between flex-wrap gap-2">
             <h1 className="text-5xl font-bold">{title}</h1>
@@ -10,6 +23,11 @@ const MainNav = ({ title, navItems }) => {
                         </a>
                     )
                 })}
+                { (showDarkMode || true) && 
+                    <div className="hidden sm:inline self-center">
+                        <button className="text-xs text-primary-300 hover:text-primary-800 dark:text-slate-500 dark:hover:text-slate-200" type="secondary" onClick={() => setDarkModeEnabled(current => !current)}>{darkModeBtnText}</button>
+                    </div>
+                }
             </div>
         </nav>
     );
