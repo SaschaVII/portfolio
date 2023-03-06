@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Button from "./button";
 import MainNav from "./mainNav";
 import ProjectCard from "./projectCard";
+import { FaSun, FaMoon, FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaGlobe } from 'react-icons/fa';
 
 const StylesShowcase = () => {
     // States
@@ -20,8 +21,17 @@ const StylesShowcase = () => {
         else htmlClassList.remove('dark');
     }, [darkModeEnabled]);
 
+    const darkModeBtnText = darkModeEnabled ? <><FaSun /> Light Mode</> : <><FaMoon /> Dark Mode</>;
+
     return (
         <div>
+            <section className="mb-4">
+                <h1 className="mb-2">Toggle Dark Mode</h1>
+                <div className="pl-4">
+                    <Button type="primary" onClick={() => setDarkModeEnabled(current => !current)}>{darkModeBtnText}</Button>
+                </div>
+            </section>
+
             <h1 className="mb-2">Components</h1>
             <section className="mb-2">
                 <div className="pl-4">
@@ -71,9 +81,15 @@ const StylesShowcase = () => {
             </section>
 
             <section className="mb-4">
-                <h1 className="mb-2">Toggle Dark Mode</h1>
-                <div className="pl-4">
-                    <Button type="primary" onClick={() => setDarkModeEnabled(current => !current)}>enable/disable darkmode</Button>
+                <h1 className="mb-2">Icons</h1>
+                <div className="pl-4 flex gap-8">
+                    <div>FaSun <FaSun /></div>
+                    <div>FaMoon <FaMoon /></div>
+                    <div>FaGithub <FaGithub /></div>
+                    <div>FaLinkedin <FaLinkedin /></div>
+                    <div>FaTwitter <FaTwitter /></div>
+                    <div>FaEnvelope <FaEnvelope /></div>
+                    <div>FaGlobe <FaGlobe /></div>
                 </div>
             </section>
         </div>
