@@ -1,30 +1,24 @@
+import { useEffect, useState } from "react";
 import Button from "./button";
 import MainNav from "./mainNav";
 import ProjectCard from "./projectCard";
 
 const StylesShowcase = () => {
+    // States
+    const [darkModeEnabled, setDarkModeEnabled] = useState(false);
+
     const navItems = [
-        {
-            id: 0,
-            url: "#",
-            title: "About Me"
-        },
-        {
-            id: 1,
-            url: "#",
-            title: "Experience"
-        },
-        {
-            id: 2,
-            url: "#",
-            title: "Work"
-        },
-        {
-            id: 3,
-            url: "#",
-            title: "Contact"
-        }
+        { id: 0, url: "#", title: "About Me" },
+        { id: 1, url: "#", title: "Experience" },
+        { id: 2, url: "#", title: "Work" },
+        { id: 3, url: "#", title: "Contact" }
     ];
+    
+    useEffect(() => {
+        const htmlClassList = document.querySelector('html').classList;
+        if (darkModeEnabled) htmlClassList.add('dark');
+        else htmlClassList.remove('dark');
+    }, [darkModeEnabled]);
 
     return (
         <div>
@@ -67,14 +61,19 @@ const StylesShowcase = () => {
             <section className="mb-4">
                 <h1 className="mb-2">Typography</h1>
                 <div className="pl-4">
-                    <div className="pl-4">
-                        <h1 className="text-5xl font-bold">Title</h1>
-                        <h1>Header 1</h1>
-                        <h2>Header 2</h2>
-                        <p>
-                            This is what a paragraph looks like. Dolor magna exercitation ad ipsum magna anim ut Lorem adipisicing mollit enim anim. Ut ut esse est consectetur pariatur exercitation do occaecat. Cillum eu id mollit est magna proident ullamco amet. Ea reprehenderit laboris dolor non aute officia dolor. Sunt proident officia et dolore mollit est.
-                        </p>
-                    </div>
+                    <h1 className="text-5xl font-bold">Title</h1>
+                    <h1>Header 1</h1>
+                    <h2>Header 2</h2>
+                    <p>
+                        This is what a paragraph looks like. Dolor magna exercitation ad ipsum magna anim ut Lorem adipisicing mollit enim anim. Ut ut esse est consectetur pariatur exercitation do occaecat. Cillum eu id mollit est magna proident ullamco amet. Ea reprehenderit laboris dolor non aute officia dolor. Sunt proident officia et dolore mollit est.
+                    </p>
+                </div>
+            </section>
+
+            <section className="mb-4">
+                <h1 className="mb-2">Toggle Dark Mode</h1>
+                <div className="pl-4">
+                    <Button type="primary" onClick={() => setDarkModeEnabled(current => !current)}>enable/disable darkmode</Button>
                 </div>
             </section>
         </div>

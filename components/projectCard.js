@@ -1,6 +1,6 @@
 const ProjectCard = ({children, className, title, thumbnailSrc, projectUrl}) => {
     let styles = className;
-    styles += " group max-w-[375px] bg-white hover:shadow-lg transition-shadows ease-in-out duration-100";
+    styles += " group max-w-[375px] bg-white hover:shadow-lg transition-shadows ease-in-out duration-100 dark:bg-transparent dark:hover:ring-2 ring-slate-700";
 
     return (
         <div className={styles}>

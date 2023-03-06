@@ -5,7 +5,7 @@ const MainNav = ({ title, navItems }) => {
             <div className="flex flex-col gap-2 sm:gap-10 sm:flex-row flex-wrap sm:self-center">
                 {navItems.map(item => {
                     return (
-                        <a key={item.id} className="text-primary-400 hover:text-primary-900 before:content-['<'] after:content-['_/>'] whitespace-nowrap" href={item.url}>
+                        <a key={item.id} className="text-primary-400 hover:text-primary-900 dark:text-slate-400 dark:hover:text-slate-200 before:content-['<'] after:content-['_/>'] whitespace-nowrap" href={item.url}>
                             {item.title}
                         </a>
                     )
