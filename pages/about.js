@@ -5,7 +5,7 @@ const About = () => {
     return (
         <>
             <MainNav title="Sascha Kuhness" />
-            <div className="container mt-20">
+            <div className="container mt-5 sm:mt-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <section>
                         <img src="https://placekitten.com/500/800" alt="Sascha Kuhness Headshot" />
