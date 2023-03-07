@@ -1,4 +1,5 @@
 import Button from "@/components/button";
+import Footer from "@/components/footer";
 import MainNav from "@/components/mainNav";
 
 const About = () => {
@@ -18,6 +19,7 @@ const About = () => {
                     </section>
                 </div>
             </div>
+            <Footer />
         </>
     );
 };

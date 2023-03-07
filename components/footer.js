@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaRegCopyright } from "rea
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className="pb-6">
             <hr className="my-6 border-slate-200 sm:mx-auto dark:border-slate-700 lg:my-8" />
             <div className="sm:flex sm:items-center sm:justify-evenly">
                 <span className="text-sm text-slate-500 sm:text-center dark:text-slate-400"><FaRegCopyright /> 2023 Sascha Kuhness. All rights reserved.</span>
