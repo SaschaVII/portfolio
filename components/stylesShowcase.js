@@ -2,6 +2,7 @@ import Button from "./button";
 import MainNav from "./mainNav";
 import ProjectCard from "./projectCard";
 import { FaSun, FaMoon, FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaGlobe } from 'react-icons/fa';
+import Footer from "./footer";
 
 const StylesShowcase = () => {
     const navItems = [
@@ -72,6 +73,11 @@ const StylesShowcase = () => {
                     <div>FaEnvelope <FaEnvelope /></div>
                     <div>FaGlobe <FaGlobe /></div>
                 </div>
+            </section>
+
+            <section className="mb-4">
+                <h1 className="mb-2">Footer</h1>
+                <Footer />
             </section>
         </>
     );
