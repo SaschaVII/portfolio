@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 const routes = [
@@ -7,16 +6,9 @@ const routes = [
     { id: 2, url: "", title: "Work" },
     { id: 3, url: "", title: "Contact" }];
 
-const MainNav = ({ className, title, showDarkMode }) => {
-    // States
-    const [darkModeEnabled, setDarkModeEnabled] = useState(false);
-
-    useEffect(() => {
-        if (darkModeEnabled) document.querySelector('html').classList.add('dark');
-        else document.querySelector('html').classList.remove('dark');
-    }, [darkModeEnabled]);
-
-    const darkModeBtnText = darkModeEnabled ? <><FaSun /> Light Mode</> : <><FaMoon /> Dark Mode</>;
+const MainNav = ({ className, title, showDarkMode, darkModeState, onDarkMode }) => {
+    // calculated props
+    const darkModeBtnText = darkModeState ? <><FaSun /> Light Mode</> : <><FaMoon /> Dark Mode</>;
 
     return (
         <nav className={className + ' mt-10 flex flex-col sm:flex-row justify-between flex-wrap gap-2'}>
@@ -29,9 +21,9 @@ const MainNav = ({ className, title, showDarkMode }) => {
                         </a>
                     )
                 })}
-                { (showDarkMode || true) && 
+                { (showDarkMode) && 
                     <div className="hidden sm:inline self-center">
-                        <button className="text-xs text-primary-300 hover:text-primary-800 dark:text-slate-500 dark:hover:text-slate-200" type="secondary" onClick={() => setDarkModeEnabled(current => !current)}>{darkModeBtnText}</button>
+                        <button className="text-xs text-primary-300 hover:text-primary-800 dark:text-slate-500 dark:hover:text-slate-200" type="secondary" onClick={onDarkMode}>{darkModeBtnText}</button>
                     </div>
                 }
             </div>

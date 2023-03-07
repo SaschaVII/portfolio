@@ -27,7 +27,7 @@ const StylesShowcase = () => {
             <section className="mb-4">
                 <h1 className="mb-2">Main Nav</h1>
                 <div className="pl-4">
-                    <MainNav title="Sascha Kuhness" navItems={navItems} />
+                    <MainNav title="Sascha Kuhness" navItems={navItems} showDarkMode="true" onDarkMode={() => alert('darkMode handler not implemented')} darkModeState={true}  />
                 </div>
             </section>
 
