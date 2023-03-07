@@ -22,7 +22,7 @@ export default function Home() {
     <>
       <MainNav title="Sascha Kuhness" className="mb-20" showDarkMode={true} darkModeState={darkMode} onDarkMode={toggleDarkMode} />
 
-      {/* implement router outlet here */}
+      {/* implement router outlet here and wrap inside a div with desired laout style */}
 
       {/* temporary component list */}
       <StylesShowcase />
