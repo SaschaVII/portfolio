@@ -1,11 +1,8 @@
 import Button from "@/components/button";
-import Footer from "@/components/footer";
-import MainNav from "@/components/mainNav";
 
 const About = () => {
     return (
         <>
-            <MainNav title="Sascha Kuhness" />
             <div className="container mt-5 sm:mt-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <section>
@@ -19,7 +16,6 @@ const About = () => {
                     </section>
                 </div>
             </div>
-            <Footer />
         </>
     );
 };
