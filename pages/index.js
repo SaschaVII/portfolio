@@ -9,24 +9,34 @@ export default function Home() {
 	const [darkMode, setDarkMode] = useState(false);
 
 	useEffect(() => {
-		// if darkmode has changed, update html element class accordingly
-		if (darkMode) document.querySelector("html").classList.add("dark");
-		else document.querySelector("html").classList.remove("dark");
+		if (localStorage.darkMode) {
+			if (JSON.parse(localStorage.darkMode) === true) {
+				setDarkMode(true);
+				document.querySelector("html").classList.add("dark");
+			} else {
+				setDarkMode(false);
+				document.querySelector("html").classList.remove("dark");
+			}
+		}
 	}, [darkMode]);
 
 	const toggleDarkMode = () => {
-		setDarkMode((current) => !current);
+		setDarkMode((current) => {
+			if (current) {
+				localStorage.darkMode = false;
+				document.querySelector("html").classList.remove("dark");
+				return false;
+			} else {
+				localStorage.darkMode = true;
+				document.querySelector("html").classList.add("dark");
+				return true;
+			}
+		});
 	};
 
 	return (
 		<>
-			<MainNav
-				title="Sascha Kuhness"
-				className="mb-20"
-				showDarkMode={true}
-				darkModeState={darkMode}
-				onDarkMode={toggleDarkMode}
-			/>
+			<MainNav title="Sascha Kuhness" className="mb-20" showDarkMode={true} darkModeState={darkMode} onDarkMode={toggleDarkMode} />
 
 			{/* implement router outlet here and wrap inside a div with desired layout style */}
 

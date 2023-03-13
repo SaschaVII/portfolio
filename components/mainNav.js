@@ -2,9 +2,9 @@ import { FaMoon, FaSun } from "react-icons/fa";
 
 const routes = [
     { id: 0, url: "/about", title: "About Me" },
-    { id: 1, url: "", title: "Experience" },
-    { id: 2, url: "", title: "Work" },
-    { id: 3, url: "", title: "Contact" }];
+    { id: 1, url: "/experience", title: "Experience" },
+    { id: 2, url: "/work", title: "Work" },
+    { id: 3, url: "/contact", title: "Contact" }];
 
 const MainNav = ({ className, title, showDarkMode, darkModeState, onDarkMode }) => {
     // calculated props
