@@ -13,14 +13,14 @@ const MainNav = ({ className, title, showDarkMode, darkModeState, onDarkMode }) 
 
     // calculated props
     const darkModeBtnText = darkModeState ? <><FaSun /> Light Mode</> : <><FaMoon /> Dark Mode</>;
-    const linkStyles = "text-sm hover:text-primary-900 dark:hover:text-slate-200 before:content-['<'] after:content-['_/>'] whitespace-nowrap sm:self-center";
+    const linkStyles = "text-md hover:text-primary-900 dark:hover:text-slate-200 before:content-['<'] after:content-['_/>'] whitespace-nowrap md:self-center";
 
     return (
-        <nav className={className + ' mt-10 flex flex-col sm:flex-row justify-between flex-wrap gap-2'}>
+        <nav className={className + ' mt-10 flex flex-col md:flex-row justify-between flex-wrap gap-2'}>
             <Link href="/about">
-                <h1 className="text-5xl font-bold">{title}</h1>
+                <h1 className="text-center md:text-left text-5xl font-bold">{title}</h1>
             </Link>
-            <div className="flex flex-col gap-2 sm:gap-10 sm:flex-row flex-wrap sm:self-center">
+            <div className="flex flex-col gap-2 md:gap-10 md:flex-row flex-wrap md:self-center">
                 {routes.map(item => {
                     return (
                         <Link key={item.id}
@@ -31,7 +31,7 @@ const MainNav = ({ className, title, showDarkMode, darkModeState, onDarkMode }) 
                     )
                 })}
                 {(showDarkMode) &&
-                    <div className="hidden sm:inline self-center">
+                    <div>
                         <button className="text-xs text-primary-300 hover:text-primary-800 dark:text-slate-500 dark:hover:text-slate-200" type="secondary" onClick={onDarkMode}>{darkModeBtnText}</button>
                     </div>
                 }
