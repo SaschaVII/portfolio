@@ -1,44 +1,17 @@
-import MainNav from "@/components/mainNav";
 import StylesShowcase from "@/components/stylesShowcase";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 export default function Home() {
-	// States
-	// darkMode state should be placed at the top level, wherever the mainNav element will sit!
-	// consider saving the darkMode variable via local storage instead of using a state in the future
-	const [darkMode, setDarkMode] = useState(false);
+	const router = useRouter();
 
 	useEffect(() => {
-		if (localStorage.darkMode) {
-			if (JSON.parse(localStorage.darkMode) === true) {
-				setDarkMode(true);
-				document.querySelector("html").classList.add("dark");
-			} else {
-				setDarkMode(false);
-				document.querySelector("html").classList.remove("dark");
-			}
-		}
-	}, [darkMode]);
-
-	const toggleDarkMode = () => {
-		setDarkMode((current) => {
-			if (current) {
-				localStorage.darkMode = false;
-				document.querySelector("html").classList.remove("dark");
-				return false;
-			} else {
-				localStorage.darkMode = true;
-				document.querySelector("html").classList.add("dark");
-				return true;
-			}
-		});
-	};
+		router.push('/about');
+	});
 
 	return (
 		<>
-			{/* // ! get rid of this page or redirect to /about */}
-			<StylesShowcase />
+			{/* <StylesShowcase /> */}
 		</>
 	);
 }
