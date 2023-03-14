@@ -37,11 +37,7 @@ export default function Home() {
 
 	return (
 		<>
-			<MainNav title="Sascha Kuhness" className="mb-20" showDarkMode={true} darkModeState={darkMode} onDarkMode={toggleDarkMode} />
-
-			{/* implement router outlet here and wrap inside a div with desired layout style */}
-
-			{/* temporary component list */}
+			{/* // ! get rid of this page or redirect to /about */}
 			<StylesShowcase />
 		</>
 	);
