@@ -2,6 +2,7 @@ import Footer from '@/components/footer';
 import MainNav from '@/components/mainNav'
 import '@/styles/globals.css'
 import { Roboto_Mono } from 'next/font/google'
+import Head from 'next/head';
 import { useEffect, useState } from 'react';
 
 const robotoMono = Roboto_Mono({
@@ -40,6 +41,10 @@ export default function App({ Component, pageProps }) {
 
   return (
     <main className={`${robotoMono.variable} font-mono`}>
+      <Head>
+        <title>Sascha Kuhness</title>
+        <link rel="title logo" type="image/png" href="logo.png" />
+      </Head>
       <MainNav title="Sascha Kuhness" className="mb-20" showDarkMode={true} darkModeState={darkMode} onDarkMode={toggleDarkMode} />
       <Component {...pageProps} />
       <Footer />
