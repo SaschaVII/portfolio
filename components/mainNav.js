@@ -17,7 +17,9 @@ const MainNav = ({ className, title, showDarkMode, darkModeState, onDarkMode }) 
 
     return (
         <nav className={className + ' mt-10 flex flex-col sm:flex-row justify-between flex-wrap gap-2'}>
-            <h1 className="text-5xl font-bold">{title}</h1>
+            <Link href="/about">
+                <h1 className="text-5xl font-bold">{title}</h1>
+            </Link>
             <div className="flex flex-col gap-2 sm:gap-10 sm:flex-row flex-wrap sm:self-center">
                 {routes.map(item => {
                     return (

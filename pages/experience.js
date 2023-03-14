@@ -1,6 +1,11 @@
+import Head from "next/head";
+
 const Experience = () => {
     return (
         <>
+            <Head>
+                <title>Sascha Kuhness - Experience</title>
+            </Head>
             <div className="container mt-5 sm:mt-20">
                 <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
                     <section>

@@ -1,8 +1,12 @@
 import Button from "@/components/button";
+import Head from "next/head";
 
 const About = () => {
     return (
         <>
+            <Head>
+                <title>Sascha Kuhness - About</title>
+            </Head>
             <div className="container mt-5 sm:mt-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <section>
