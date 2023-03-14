@@ -1,4 +1,7 @@
+import Button from "@/components/button";
+import ProjectCard from "@/components/projectCard";
 import Head from "next/head";
+import { FaGithub } from "react-icons/fa";
 
 const Work = () => {
     return (
@@ -7,16 +10,35 @@ const Work = () => {
                 <title>Sascha Kuhness - Work</title>
             </Head>
             <div className="container mt-5 sm:mt-20">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
-                        <section>
-                            <h1>Work</h1>
-                            <p>
-                                Nostrud ex do Lorem mollit deserunt in excepteur cillum fugiat commodo minim voluptate velit aliqua. Eu Lorem dolor magna dolore ullamco laboris dolore duis. Eu sunt et duis proident velit non adipisicing commodo nisi nisi anim pariatur labore exercitation. Minim adipisicing irure culpa est occaecat.
-                            </p>
-                        </section>
+                <section>
+                    <h1 className="mb-2">Work</h1>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <ProjectCard title="Project Title 1" thumbnailSrc="https://placekitten.com/375/375">
+                            <p>Project Description...</p>
+                        </ProjectCard>
+                        <ProjectCard title="Project Title 2" thumbnailSrc="https://placekitten.com/375/375">
+                            <p>Project Description...</p>
+                        </ProjectCard>
+                        <ProjectCard title="Project Title 3" thumbnailSrc="https://placekitten.com/375/375">
+                            <p>Project Description...</p>
+                        </ProjectCard>
+                        <ProjectCard title="Project Title 4" thumbnailSrc="https://placekitten.com/375/375">
+                            <p>Project Description...</p>
+                        </ProjectCard>
+                        <ProjectCard title="Project Title 5" thumbnailSrc="https://placekitten.com/375/375">
+                            <p>Project Description...</p>
+                        </ProjectCard>
+                        <ProjectCard title="Project Title 6" thumbnailSrc="https://placekitten.com/375/375">
+                            <p>Project Description...</p>
+                        </ProjectCard>
+                        <ProjectCard title="Project Title 7" thumbnailSrc="https://placekitten.com/375/375">
+                            <p>Project Description...</p>
+                        </ProjectCard>
+                        <ProjectCard title="Project Title 8" thumbnailSrc="https://placekitten.com/375/375">
+                            <p>Project Description...</p>
+                        </ProjectCard>
                     </div>
-                </div>
+                </section>
             </div>
         </>
     );
