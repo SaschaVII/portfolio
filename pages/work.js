@@ -13,10 +13,13 @@ const Work = () => {
                 <section>
                     <h1 className="mb-2">Work</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        <ProjectCard title="Project Title 1" thumbnailSrc="https://placekitten.com/375/375">
-                            <p>Project Description...</p>
+                        <ProjectCard title="This Portfolio" thumbnailSrc="/portfolio_proj_thumbnail.png">
+                            <p>This portfolio was designed and built by me entirely from scratch. It showcases my profficiency with technologies such as React, Next.js, Tailwind as well as vanilla JavaScript, CSS and HTML.</p>
                         </ProjectCard>
-                        <ProjectCard title="Project Title 2" thumbnailSrc="https://placekitten.com/375/375">
+                        <ProjectCard title="Coming soon..." thumbnailSrc="https://placekitten.com/500/500">
+                            <p>More projects will be added soon...</p>
+                        </ProjectCard>
+                        {/* <ProjectCard title="Project Title 2" thumbnailSrc="https://placekitten.com/375/375">
                             <p>Project Description...</p>
                         </ProjectCard>
                         <ProjectCard title="Project Title 3" thumbnailSrc="https://placekitten.com/375/375">
@@ -36,7 +39,7 @@ const Work = () => {
                         </ProjectCard>
                         <ProjectCard title="Project Title 8" thumbnailSrc="https://placekitten.com/375/375">
                             <p>Project Description...</p>
-                        </ProjectCard>
+                        </ProjectCard> */}
                     </div>
                 </section>
             </div>
