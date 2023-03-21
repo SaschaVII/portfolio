@@ -11,7 +11,7 @@ const About = () => {
             <div className="container mt-5 sm:mt-20">
                 <div className="grid grid-cols-12 gap-8">
                     <section className="col-span-12 lg:col-span-4">
-                        <img src="https://placekitten.com/500/800" alt="Sascha Kuhness Headshot" />
+                        <img src="/headshot.jpg" alt="Sascha Kuhness Headshot" />
                     </section>
                     <section className="col-span-12 lg:col-span-8">
                         <h1 className="mb-2">About</h1>
