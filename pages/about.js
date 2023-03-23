@@ -16,12 +16,15 @@ const About = () => {
                     <section className="col-span-12 lg:col-span-8">
                         <h1 className="mb-2">About</h1>
                         <p className="mb-4">
-                            I am a hardworking individual currently seeking a new entry level position as a Software Tester/Developer. Having worked on the code for multiple projects, I have made myself very well versed in object oriented programming languages.
+                            As a dedicated and motivated professional, I am actively seeking a new entry-level position as a Software Tester/Developer. With experience in coding for multiple projects, I possess a strong understanding of object-oriented programming languages and am passionate about staying up-to-date with the latest technologies.
                         </p>
-                        <p>
-                            Recent achievements include the coding of an Arduino chip, serving as a MIDI Interface, for my diploma thesis at HTL Bulme.
+                        <p className="mb-4">
+                            One of my most notable achievements was the successful coding of an Arduino chip to serve as a MIDI interface for my diploma thesis at HTL Bulme. This project not only allowed me to demonstrate my technical skills, but also showcased my ability to think creatively and solve complex problems.
                         </p>
-                        <a className="btn btn-secondary mr-2 inline-block mt-4" href="/cv_7_01_2023.pdf" target="_blank">Check out my CV</a>
+                        <p className="mb-4">
+                            I am excited to bring my skills and expertise to a new opportunity where I can contribute to the development and success of innovative projects. Thank you for considering my application.
+                        </p>
+                        <a className="btn btn-secondary mr-2 inline-block" href="/cv_7_01_2023.pdf" target="_blank">Check out my CV</a>
                     </section>
                 </div>
             </div>
