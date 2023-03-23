@@ -14,7 +14,7 @@ const Work = () => {
                     <h1 className="mb-2">Work</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         <ProjectCard title="This Portfolio" thumbnailSrc="/portfolio_proj_thumbnail.png">
-                            <p>This portfolio was designed and built by me entirely from scratch. It showcases my profficiency with technologies such as React, Next.js, Tailwind as well as vanilla JavaScript, CSS and HTML.</p>
+                            <p>This portfolio website is a showcase of my professional experience, skills, and projects. Built entirely from scratch using <strong>React</strong> and <strong>Next.js</strong>, it features a sleek and modern design that I crafted myself using <strong>Tailwind</strong>. The website has a user-friendly interface with a convenient dark mode option. Visitors can browse my past work and explore my expertise in various areas. The website is a perfect complement to my CV, providing potential employers and clients with an in-depth look at my abilities and accomplishments.</p>
                         </ProjectCard>
                         <ProjectCard title="Coming soon..." thumbnailSrc="https://placekitten.com/500/500">
                             <p>More projects will be added soon...</p>
