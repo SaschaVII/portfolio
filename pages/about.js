@@ -14,7 +14,7 @@ const About = () => {
                         <img src="/headshot.jpg" alt="Sascha Kuhness Headshot" />
                     </section>
                     <section className="col-span-12 lg:col-span-8">
-                        <h1 className="mb-2">About</h1>
+                        <h1 className="mb-2 inline-block is-underlined">About</h1>
                         <p className="mb-4">
                             As a dedicated and motivated professional, I am actively seeking a new entry-level position as a Software Tester/Developer. With experience in coding for multiple projects, I possess a strong understanding of object-oriented programming languages and am passionate about staying up-to-date with the latest technologies.
                         </p>

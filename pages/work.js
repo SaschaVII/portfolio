@@ -15,7 +15,7 @@ const Work = () => {
             </Head>
             <div className="container mt-5 sm:mt-20">
                 <section>
-                    <h1 className="mb-2">Work</h1>
+                    <h1 className="mb-2 inline-block is-underlined">Work</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         <ProjectCard title="This Portfolio" projectUrl="/about" thumbnailSrc="/portfolio_proj_thumbnail.png">
                             <p>This portfolio website is a showcase of my professional experience, skills, and projects. Built entirely from scratch using <strong>React</strong> and <strong>Next.js</strong>, it features a sleek and modern design that I crafted myself using <strong>Tailwind</strong>. The website has a user-friendly interface with a convenient dark mode option. Visitors can browse my past work and explore my expertise in various areas.</p>

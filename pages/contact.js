@@ -11,7 +11,7 @@ const Contact = () => {
                 <div className="grid grid-cols-1 gap-4">
                     <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
                         <section>
-                            <h1>Let&apos;s Talk!</h1>
+                            <h1 className="inline-block is-underlined mb-2">Let&apos;s Talk!</h1>
                             <p className="mt-2">
                                 I am always happy to talk about any job opportunities or other quries via any of the following methods:
                             </p>

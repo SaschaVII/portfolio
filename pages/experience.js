@@ -9,7 +9,7 @@ const Experience = () => {
             <div className="container mt-5 sm:mt-20">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="col-span-2">
-                        <h1 className="mb-6">Job Experience</h1>
+                        <h1 className="mb-2 inline-block is-underlined">Job Experience</h1>
                         <div className="ml-4">
                             <section className="mt-2 mb-8">
                                 <h2>Calendar Club UK, Exeter, England - Software Developer</h2>
