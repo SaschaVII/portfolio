@@ -1,11 +1,11 @@
-const ProjectCard = ({children, className, title, thumbnailSrc, projectUrl}) => {
+const ProjectCard = ({ children, className, title, thumbnailSrc, projectUrl }) => {
     let styles = className;
     styles += " group max-w-[375px] bg-white hover:shadow-lg transition-shadows ease-in-out duration-100 dark:bg-transparent dark:hover:ring-2 ring-slate-700";
 
     return (
         <div className={styles}>
             <a href={projectUrl || ""}>
-                <img className="group-hover:saturate-0 group-hover:brightness-200 transition ease-in-out duration-700" src={thumbnailSrc} alt={title + ' thumbnail'} />
+                <img className="group-hover:saturate-0 group-hover:brightness-150 transition ease-in-out duration-500" src={thumbnailSrc} alt={title + ' thumbnail'} />
             </a>
             <div className="p-5 flex flex-col">
                 <h1 className="mb-2">{title}</h1>
