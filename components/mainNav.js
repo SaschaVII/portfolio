@@ -13,7 +13,7 @@ const MainNav = ({ className, title, showDarkMode, darkModeState, onDarkMode }) 
 
     // calculated props
     const darkModeBtnText = darkModeState ? <><FaSun /> Light Mode</> : <><FaMoon /> Dark Mode</>;
-    const linkStyles = "text-md hover:text-primary-900 dark:hover:text-slate-200 before:content-['<'] after:content-['_/>'] whitespace-nowrap md:self-center";
+    const linkStyles = "text-md hover:text-emerald-400 dark:hover:text-emerald-200 before:content-['<'] after:content-['_/>'] whitespace-nowrap md:self-center";
 
     return (
         <nav className={className + ' mt-10 flex flex-col md:flex-row justify-between flex-wrap gap-2'}>
@@ -24,7 +24,7 @@ const MainNav = ({ className, title, showDarkMode, darkModeState, onDarkMode }) 
                 {routes.map(item => {
                     return (
                         <Link key={item.id}
-                            className={linkStyles + ((router.asPath == item.url) ? " font-bold text:black dark:text-white" : " text-primary-400 dark:text-slate-400")}
+                            className={linkStyles + ((router.asPath == item.url) ? " font-bold text-emerald-600 dark:text-emerald-100" : " text-primary-400 dark:text-slate-400")}
                             href={item.url} >
                             {item.title}
                         </Link>

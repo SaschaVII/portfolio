@@ -34,7 +34,7 @@ h2 {
 }
 /* Secondary */
 .btn-secondary {
-  @apply border-b-2 border-primary-400 py-1 px-1 hover:bg-amber-400 hover:text-white hover:border-transparent dark:text-slate-400 dark:border-slate-400 dark:hover:bg-amber-600 dark:hover:text-slate-200 dark:hover:border-transparent;
+  @apply border-b-2 border-primary-400 py-1 px-1 hover:bg-emerald-400 hover:text-white hover:border-transparent dark:text-slate-400 dark:border-slate-400 dark:hover:bg-emerald-600 dark:hover:text-slate-200 dark:hover:border-transparent;
 }
 
 /* fixing display for react-icons */
@@ -56,7 +56,7 @@ svg {
   height: 6px;
   bottom: 1px;
   left: 0;
-  @apply bg-amber-300 dark:bg-amber-600;
+  @apply bg-emerald-300 dark:bg-emerald-600;
   clip-path: polygon(0% 3px, 100% 0%, 100% 100%, 0% 100%);
   z-index: -1;
 }
