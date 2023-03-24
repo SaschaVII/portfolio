@@ -11,6 +11,10 @@ const Work = () => {
     const handleStickyNotesClick = () => {
         window.open("https://github.com/SaschaVII/StickyNotesApp");
     };
+    
+    const handleTaskListAppProjClick = () => {
+        window.open("https://github.com/SaschaVII/task-list-app");
+    };
 
     return (
         <>
@@ -33,8 +37,9 @@ const Work = () => {
                             </p>
                             <Button className="mt-2" type="secondary" onClick={handleStickyNotesClick}><FaGithub /> GitHub</Button>
                         </ProjectCard>
-                        <ProjectCard title="Coming soon..." thumbnailSrc="https://placekitten.com/500/500">
-                            <p>More projects will be added soon...</p>
+                        <ProjectCard title="Simple Task List" projectUrl="https://github.com/SaschaVII/task-list-app" thumbnailSrc="/taskListApp_thumbnail.png">
+                            <p>More details about this project coming soon...</p>
+                            <Button type="secondary" onClick={handleTaskListAppProjClick}><FaGithub /> GitHub</Button>
                         </ProjectCard>
                         {/* <ProjectCard title="Project Title 2" thumbnailSrc="https://placekitten.com/375/375">
                             <p>Project Description...</p>

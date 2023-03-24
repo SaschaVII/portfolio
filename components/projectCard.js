@@ -1,4 +1,7 @@
 const ProjectCard = ({ children, className, title, thumbnailSrc, projectUrl }) => {
+    // TODO: make sure that the card has a max height and scales the thumbnail to a default size
+    // TODO: add pretty child component for tech used
+    
     let styles = className;
     styles += " group max-w-[375px] bg-white hover:shadow-lg transition-shadows ease-in-out duration-100 dark:bg-transparent dark:hover:ring-2 ring-slate-700";
     styles += " group max-w-[375px] bg-white hover:shadow-lg transition-shadows ease-in-out duration-100 dark:bg-transparent dark:hover:ring-2 ring-slate-700";
