@@ -41,6 +41,10 @@ const Work = () => {
                             <p>More details about this project coming soon...</p>
                             <Button className="mt-2" type="secondary" onClick={handleTaskListAppProjClick}><FaGithub /> GitHub</Button>
                         </ProjectCard>
+                        <ProjectCard title="More to come soon" projectUrl="/about" thumbnailSrc="https://placekitten.com/375/375">
+                            <p>I am curretly working on adding all my other projects that I have been working on here...</p>
+                            <Button className="mt-2" type="secondary" onClick={handleTaskListAppProjClick}><FaGithub /> GitHub</Button>
+                        </ProjectCard>
                         {/* <ProjectCard title="Project Title 2" thumbnailSrc="https://placekitten.com/375/375">
                             <p>Project Description...</p>
                         </ProjectCard>
