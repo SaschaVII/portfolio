@@ -11,7 +11,7 @@ const Work = () => {
     const handleStickyNotesClick = () => {
         window.open("https://github.com/SaschaVII/StickyNotesApp");
     };
-    
+
     const handleTaskListAppProjClick = () => {
         window.open("https://github.com/SaschaVII/task-list-app");
     };
@@ -37,8 +37,8 @@ const Work = () => {
                             </p>
                             <Button className="mt-2" type="secondary" onClick={handleStickyNotesClick}><FaGithub /> GitHub</Button>
                         </ProjectCard>
-                        <ProjectCard title="Simple Task List" projectUrl="https://github.com/SaschaVII/task-list-app" thumbnailSrc="/taskListApp_thumbnail.png">
-                            <p>More details about this project coming soon...</p>
+                        <ProjectCard title="Simple Task List" projectUrl="https://saschavii.github.io/task-list-app" thumbnailSrc="/taskListApp_thumbnail.png">
+                            <p>A simple Next.js powered task list that is meant to increase productivity. It smartly orders tasks based on pin-status, priority and due date, highlighting the the most important task for you. Storage is implemented using the browser&#39;s local storage api.</p>
                             <Button className="mt-2" type="secondary" onClick={handleTaskListAppProjClick}><FaGithub /> GitHub</Button>
                         </ProjectCard>
                         <ProjectCard title="More to come soon" projectUrl="/about" thumbnailSrc="https://placekitten.com/375/375">
