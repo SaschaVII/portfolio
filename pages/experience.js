@@ -40,7 +40,7 @@ const Experience = () => {
                                 </p>
                             </section>
                         </div>
-                        <a className="btn btn-secondary mr-2 inline-block mt-4" href="/cv_7_01_2023.pdf" target="_blank">For more details check out my CV!</a>
+                        <a className="btn btn-secondary mr-2 inline-block mt-4" href="/Sascha_Kuhness_CV_2023-10-09.pdf" target="_blank">For more details check out my CV!</a>
                     </div>
                 </div>
             </div>
