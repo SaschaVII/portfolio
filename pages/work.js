@@ -50,7 +50,7 @@ const Work = () => {
                             <Button className="mt-2" type="secondary" onClick={handleIpaProjClick}><FaGithub /> GitHub</Button>
                         </ProjectCard>
                         <ProjectCard title="More to come soon" thumbnailSrc="https://placekitten.com/375/375">
-                            <p>I am currently in the process of adding all my the projects I've been working on...</p>
+                            <p>I am currently in the process of adding all my the projects I have been working on...</p>
                         </ProjectCard>
                         {/* <ProjectCard title="Project Title 3" thumbnailSrc="https://placekitten.com/375/375">
                             <p>Project Description...</p>
