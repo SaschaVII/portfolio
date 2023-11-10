@@ -13,7 +13,7 @@ const IpaCard = ({ title, content }) => {
     return (
         <div className={(!isClicked?'ipa-card':'ipa-card-clicked')} onClick={() => copyToClipboard(contentToCopy)}>
             {title}
-            {(isClicked) && <div className='ipa-card-clicked-text'>copied</div>}
+            {(isClicked) && <div className='ipa-copied-text'>copied</div>}
         </div>
     );
 };

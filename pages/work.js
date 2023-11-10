@@ -16,6 +16,10 @@ const Work = () => {
         window.open("https://github.com/SaschaVII/task-list-app");
     };
 
+    const handleIpaProjClick = () => {
+        window.open("https://github.com/SaschaVII/portfolio");
+    };
+
     return (
         <>
             <Head>
@@ -41,14 +45,14 @@ const Work = () => {
                             <p>A simple Next.js powered task list that is meant to increase productivity. It smartly orders tasks based on pin-status, priority and due date, highlighting the the most important task for you. Storage is implemented using the browser&#39;s local storage api.</p>
                             <Button className="mt-2" type="secondary" onClick={handleTaskListAppProjClick}><FaGithub /> GitHub</Button>
                         </ProjectCard>
-                        <ProjectCard title="More to come soon" projectUrl="/about" thumbnailSrc="https://placekitten.com/375/375">
-                            <p>I am curretly working on adding all my other projects that I have been working on here...</p>
-                            <Button className="mt-2" type="secondary" onClick={handleTaskListAppProjClick}><FaGithub /> GitHub</Button>
+                        <ProjectCard title="IPA Keyboard" projectUrl="/ipa" thumbnailSrc="/ipa_proj_thumbnail.png    ">
+                            <p>An keyboard that automatically copies the International Phonetic Alphabet symbols to your clipboard, created with <strong>React</strong>.</p>
+                            <Button className="mt-2" type="secondary" onClick={handleIpaProjClick}><FaGithub /> GitHub</Button>
                         </ProjectCard>
-                        {/* <ProjectCard title="Project Title 2" thumbnailSrc="https://placekitten.com/375/375">
-                            <p>Project Description...</p>
+                        <ProjectCard title="More to come soon" thumbnailSrc="https://placekitten.com/375/375">
+                            <p>I am currently in the process of adding all my the projects I've been working on...</p>
                         </ProjectCard>
-                        <ProjectCard title="Project Title 3" thumbnailSrc="https://placekitten.com/375/375">
+                        {/* <ProjectCard title="Project Title 3" thumbnailSrc="https://placekitten.com/375/375">
                             <p>Project Description...</p>
                         </ProjectCard>
                         <ProjectCard title="Project Title 4" thumbnailSrc="https://placekitten.com/375/375">

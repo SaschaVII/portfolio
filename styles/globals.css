@@ -73,7 +73,7 @@ svg {
   @apply bg-emerald-400 dark:bg-emerald-600;
 }
 
-.ipa-card-clicked-text {
+.ipa-copied-text {
   @apply text-sm block h-0;
 }
 
