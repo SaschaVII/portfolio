@@ -46,20 +46,22 @@ const Contact = () => {
             </Head>
             <div className="container mt-5 sm:mt-20">
                 <section>
-                    {ipaData && Object.keys(ipaData).map(key => (
-                        <>
-                            <h1 className="mb-2 inline-block is-underlined capitalize" key={key}>{key}</h1>
-                            {generateSubHeaderOrIpaCards(ipaData[key], key)}
-                        </>
-                    ))}
+                    <div className="mb-8">
+                        {ipaData && Object.keys(ipaData).map(key => (
+                            <>
+                                <h1 className="mb-2 inline-block is-underlined capitalize" key={key}>{key}</h1>
+                                {generateSubHeaderOrIpaCards(ipaData[key], key)}
+                            </>
+                        ))}
+                    </div>
                     {(mergedString) && 
-                        <>
-                            <h1 className="mb-2 inline-block is-underlined mt-10">Symbol Merger</h1><br />
+                        <div className="mb-8">
+                            <h1 className="mb-4 inline-block is-underlined">Symbol Merger</h1><br />
                             <IpaMerger content={mergedString} onDelete={deleteMergedString} />
-                        </>
+                        </div>
                     }
 
-                    <h1 className="mb-2 inline-block is-underlined mt-10">Useful Links</h1><br />
+                    <h1 className="mb-2 inline-block is-underlined">Useful Links</h1><br />
                     <ul className="list-disc list-inside">
                         <li>
                             <a className="underline"
