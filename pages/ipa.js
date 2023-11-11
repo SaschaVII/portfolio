@@ -1,7 +1,6 @@
 import IpaCard from "@/components/ipaCard";
 import IpaMerger from "@/components/ipaMerger";
 import Head from "next/head";
-import { parse } from "postcss";
 import { useState, useEffect } from "react";
 
 const Contact = () => {
@@ -23,6 +22,22 @@ const Contact = () => {
 
     const addToIpaMerger = symbol => setMergedString(current => current + symbol);
     const deleteMergedString = () => setMergedString("");
+    const generateSubHeaderOrIpaCards = (item, itemKey) => {
+        console.log("item", item);
+        if (Array.isArray(item)) {
+            return (
+                <>
+                    <h2 className="capitalize">{itemKey}</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-8 gap-4 py-2 mb-4">
+                        {item.map((text, index) => (
+                                <IpaCard key={index} title={text} clickHandler={addToIpaMerger} />
+                        ))}
+                    </div>
+                </>
+            );
+        }
+        return Object.keys(item).map(key => generateSubHeaderOrIpaCards(item[key], key));
+    }
 
     return (
         <>
@@ -31,25 +46,12 @@ const Contact = () => {
             </Head>
             <div className="container mt-5 sm:mt-20">
                 <section>
-                    <h1 className="mb-2 inline-block is-underlined">IPA Symbols</h1>
-                    <h2>Consonants</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-8 gap-4 py-2 mb-4">
-                    {ipaData?.consonants?.map((text, index) => (
-                        <IpaCard key={index} title={text} clickHandler={addToIpaMerger} />
+                    {ipaData && Object.keys(ipaData).map(key => (
+                        <>
+                            <h1 className="mb-2 inline-block is-underlined capitalize" key={key}>{key}</h1>
+                            {generateSubHeaderOrIpaCards(ipaData[key], key)}
+                        </>
                     ))}
-                    </div>
-                    <h2>Vowels</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-8 gap-4 py-2 mb-4">
-                    {ipaData?.vowels?.standard?.map((text, index) => (
-                        <IpaCard key={index} title={text} clickHandler={addToIpaMerger} />
-                    ))}
-                    </div>
-                    <h3>Diphthongs</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-8 gap-4 py-2">
-                    {ipaData?.vowels?.diphthongs?.map((text, index) => (
-                        <IpaCard key={index} title={text} clickHandler={addToIpaMerger} />
-                    ))}
-                    </div>
                     {(mergedString) && 
                         <>
                             <h1 className="mb-2 inline-block is-underlined mt-10">Symbol Merger</h1><br />
