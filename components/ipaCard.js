@@ -1,18 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
-const IpaCard = ({ title, content, clickHandler }) => {
+const IpaCard = ({ title, content, clickHandler, copyFont }) => {
     content = content || title;
     const [isClicked, setIsClicked] = useState(false);
+    const cardHtmlElement = useRef(null);
+    let classList = "ipa-card";
+
+    if (isClicked) classList = "ipa-card-clicked";
+    if (copyFont) classList += (" plain");
 
     const copyToClipboard = (stringToCopy) => {
         navigator.clipboard.writeText(stringToCopy);
         if (clickHandler) clickHandler(content);
         setIsClicked(true);
         setTimeout(() => setIsClicked(false), 500);
+
+        // highlight the inner HTML for manual copying
+        if(copyFont) window.getSelection().selectAllChildren(cardHtmlElement.current);
     };
 
     return (
-        <div className={(!isClicked?'ipa-card':'ipa-card-clicked')} onClick={() => copyToClipboard(content)}>
+        <div className={classList}
+            onClick={() => copyToClipboard(content)}
+            ref={cardHtmlElement}>
             {title}
             {(isClicked) && <div className='ipa-copied-text'>copied</div>}
         </div>

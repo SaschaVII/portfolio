@@ -10,6 +10,9 @@ module.exports = {
 		"./components/**/*.{js,ts,jsx,tsx}",
 	],
 	theme: {
+		fontFamily: {
+			'serif': ['"Times New Roman"', 'Times', 'serif']	
+		},
 		extend: {
 			colors: {
 				primary: colors.zinc,

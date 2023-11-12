@@ -62,7 +62,7 @@ svg {
 }
 
 .ipa-card, .ipa-card-clicked {
-  @apply select-none font-serif p-6 text-center bg-primary-700 text-white text-3xl dark:text-slate-300 dark:bg-slate-600;
+  @apply font-serif p-6 text-center bg-primary-700 text-white text-3xl dark:text-slate-300 dark:bg-slate-600;
 }
 
 .ipa-card {
@@ -77,3 +77,11 @@ svg {
   @apply text-sm block h-0;
 }
 
+/* For copy with font */
+.ipa-card.plain, .ipa-card-clicked.plain {
+  @apply font-serif text-black bg-transparent border-2 border-primary-500 dark:text-black dark:bg-white;
+}
+
+.ipa-card.plain:hover, .ipa-card-clicked.plain:hover {
+  @apply shadow-md bg-transparent dark:bg-white;
+}
