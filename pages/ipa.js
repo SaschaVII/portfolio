@@ -2,6 +2,7 @@ import IpaCard from "@/components/ipaCard";
 import IpaMerger from "@/components/ipaMerger";
 import Head from "next/head";
 import { useState, useEffect } from "react";
+import React from "react";
 
 const Ipa = () => {
     const [ipaData, setIpaData] = useState(null);
@@ -40,11 +41,11 @@ const Ipa = () => {
     const generateSubHeaderOrIpaCards = (item, itemKey) => {
         if (Array.isArray(item)) {
             return (
-                <div>
+                <div key={itemKey}>
                     <h2 className="capitalize">{itemKey}</h2>
                     <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-8 gap-4 py-2 mb-4">
-                        {item.map((text, index) => (
-                                <IpaCard key={index} title={text} clickHandler={addToIpaMerger} copyFont={includeFont} />
+                        {item.map(text => (
+                                <IpaCard key={text} title={text} clickHandler={addToIpaMerger} copyFont={includeFont} />
                         ))}
                     </div>
                 </div>
@@ -70,10 +71,10 @@ const Ipa = () => {
                     </div>
                     <div className="mb-8">
                         {ipaData && Object.keys(ipaData).map(key => (
-                            <>
-                                <h1 className="mb-2 inline-block is-underlined capitalize" key={key}>{key}</h1>
+                            <React.Fragment key={key}>
+                                <h1 className="mb-2 inline-block is-underlined capitalize">{key}</h1>
                                 {generateSubHeaderOrIpaCards(ipaData[key], key)}
-                            </>
+                            </React.Fragment>
                         ))}
                     </div>
                     {(mergedString) && 
