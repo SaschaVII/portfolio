@@ -9,6 +9,12 @@ const Ipa = () => {
     const [includeFont, setIncludeFont] = useState(false);
 
     useEffect(() => {
+        // Retrieve includeFont value from local storage
+        const storedIncludeFont = localStorage.getItem('includeFont');
+        if (storedIncludeFont !== null) {
+            setIncludeFont(storedIncludeFont === 'true');
+        }
+
         const fetchData = async () => {
             try {
                 const response = await fetch("/ipa.json");
@@ -23,7 +29,14 @@ const Ipa = () => {
 
     const addToIpaMerger = symbol => setMergedString(current => current + symbol);
     const deleteMergedString = () => setMergedString("");
-    const toggleIncludeFont = () => setIncludeFont(current => !current);
+    const toggleIncludeFont = () => {
+        setIncludeFont(current => {
+            const newValue = !current;
+            // Store the updated value in local storage
+            localStorage.setItem('includeFont', newValue.toString());
+            return newValue;
+        });
+    }
     const generateSubHeaderOrIpaCards = (item, itemKey) => {
         if (Array.isArray(item)) {
             return (
@@ -53,7 +66,7 @@ const Ipa = () => {
                                 className="w-4 h-4 mr-2"
                                 checked={includeFont}
                                 onChange={toggleIncludeFont} />
-                        <label htmlFor="copyFont_input">Include font when copying</label>
+                        <label htmlFor="copyFont_input">Switch to manual copy mode</label>
                     </div>
                     <div className="mb-8">
                         {ipaData && Object.keys(ipaData).map(key => (

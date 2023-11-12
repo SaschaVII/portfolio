@@ -1,11 +1,12 @@
 import React, { useState, useRef } from 'react';
 
 const IpaCard = ({ title, content, clickHandler, copyFont }) => {
-    content = content || title;
     const [isClicked, setIsClicked] = useState(false);
     const cardHtmlElement = useRef(null);
     let classList = "ipa-card";
-
+    
+    content = content || title;
+    if (content === " ") title = "␣";
     if (isClicked) classList = "ipa-card-clicked";
     if (copyFont) classList += (" plain");
 
