@@ -3,6 +3,7 @@ import IpaMerger from "@/components/ipaMerger";
 import Head from "next/head";
 import { useState, useEffect } from "react";
 import React from "react";
+import { current } from "tailwindcss/colors";
 
 const Ipa = () => {
     const [ipaData, setIpaData] = useState(null);
@@ -30,6 +31,7 @@ const Ipa = () => {
 
     const addToIpaMerger = symbol => setMergedString(current => current + symbol);
     const deleteMergedString = () => setMergedString("");
+    const removeLastCharInMergedString = () => setMergedString(current => current.slice(0, current.length-1));
     const toggleIncludeFont = () => {
         setIncludeFont(current => {
             const newValue = !current;
@@ -80,7 +82,7 @@ const Ipa = () => {
                     {(mergedString) && 
                         <div className="mb-8">
                             <h1 className="mb-4 inline-block is-underlined">Symbol Merger</h1><br />
-                            <IpaMerger content={mergedString} onDelete={deleteMergedString} copyFont={includeFont}/>
+                            <IpaMerger content={mergedString} onDelete={deleteMergedString} onBackspace={removeLastCharInMergedString} copyFont={includeFont}/>
                         </div>
                     }
 
