@@ -60,3 +60,28 @@ svg {
   clip-path: polygon(0% 3px, 100% 0%, 100% 100%, 0% 100%);
   z-index: -1;
 }
+
+.ipa-card, .ipa-card-clicked {
+  @apply font-serif p-6 text-center bg-primary-700 text-white text-3xl dark:text-slate-300 dark:bg-slate-600;
+}
+
+.ipa-card {
+  @apply transition-colors hover:bg-primary-500 dark:hover:bg-slate-700 cursor-pointer
+}
+
+.ipa-card-clicked {
+  @apply bg-emerald-400 dark:bg-emerald-600;
+}
+
+.ipa-copied-text {
+  @apply text-sm block h-0;
+}
+
+/* For copy with font */
+.ipa-card.plain, .ipa-card-clicked.plain {
+  @apply font-serif text-black bg-transparent border-2 border-primary-500 dark:text-black dark:bg-white;
+}
+
+.ipa-card.plain:hover, .ipa-card-clicked.plain:hover {
+  @apply shadow-md bg-transparent dark:bg-white;
+}
