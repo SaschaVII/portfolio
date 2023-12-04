@@ -19,7 +19,11 @@ const Work = () => {
     const handleIpaProjClick = () => {
         window.open("https://github.com/SaschaVII/portfolio");
     };
-
+    
+    const handleEchoLingoProjClick = () => {
+        window.open("https://github.com/SaschaVII/echolingo");
+    };
+    
     return (
         <>
             <Head>
@@ -42,15 +46,16 @@ const Work = () => {
                             <Button className="mt-2" type="secondary" onClick={handleStickyNotesClick}><FaGithub /> GitHub</Button>
                         </ProjectCard>
                         <ProjectCard title="Simple Task List" projectUrl="https://saschavii.github.io/task-list-app" thumbnailSrc="/taskListApp_thumbnail.png" animation={true}>
-                            <p>A simple Next.js powered task list that is meant to increase productivity. It smartly orders tasks based on pin-status, priority and due date, highlighting the the most important task for you. Storage is implemented using the browser&#39;s local storage api.</p>
+                            <p>A simple <strong>Next.js</strong> powered task list that is meant to increase productivity. It smartly orders tasks based on pin-status, priority and due date, highlighting the the most important task for you. Storage is implemented using the browser&#39;s local storage api.</p>
                             <Button className="mt-2" type="secondary" onClick={handleTaskListAppProjClick}><FaGithub /> GitHub</Button>
                         </ProjectCard>
                         <ProjectCard title="IPA Keyboard" projectUrl="/ipa" thumbnailSrc="/ipa_proj_thumbnail.png" animation={true}>
                             <p>An keyboard that automatically copies the International Phonetic Alphabet symbols to your clipboard, created with <strong>React</strong>.</p>
                             <Button className="mt-2" type="secondary" onClick={handleIpaProjClick}><FaGithub /> GitHub</Button>
                         </ProjectCard>
-                        <ProjectCard title="More to come soon" thumbnailSrc="https://placekitten.com/375/375" animation={true}>
-                            <p>I am currently in the process of adding all my the projects I have been working on...</p>
+                        <ProjectCard title="EchoLingo" projectUrl="https://saschavii.github.io/echolingo/" thumbnailSrc="/echolingo_proj_thumbnail.png" animation={true}>
+                            <p>Another fun React project of mine heavily inspired by a popular word puzzle game.</p>
+                            <Button className="mt-2" type="secondary" onClick={handleEchoLingoProjClick}><FaGithub /> GitHub</Button>
                         </ProjectCard>
                         {/* <ProjectCard title="Project Title 3" thumbnailSrc="https://placekitten.com/375/375">
                             <p>Project Description...</p>
