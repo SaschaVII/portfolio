@@ -19,17 +19,17 @@ const Experience = () => {
                                 </p>
                             </section>
                             <section className="mt-4 mb-8">
-                                <h2>Ventrica, Southend-on-Sea, England - Customer Service Advisor</h2>
+                                <h2>Ventrica, Southend-on-Sea, England - Technical Support Specialist</h2>
                                 <h3 className="mb-2">OCTOBER 2021 - May 2022</h3>
                                 <p className="ml-4">
-                                    Part of a busy customer service team providing support and guidance for valued customers. Able to resolve any customer dissatisfactions and provide solutions appropriately.
+                                    Provided excellent technical support via phone, email, and chat. Achieved a 95% customer satisfaction rating and consistently exceeded daily call resolution targets by 15%
                                 </p>
                             </section>
                             <section className="mt-4 mb-8">
-                                <h2>Sitel, Derriford, England - NHS Track & Trace Call Handler</h2>
+                                <h2>Sitel, Derriford, England - NHS Track & Trace Technical Support Specialist</h2>
                                 <h3 className="mb-2">OCTOBER 2020 - JUNE 2021</h3>
                                 <p className="ml-4">
-                                    Call handler for NHS Track & Trace campaign, requiring excellent verbal and written communication skills, as well as problem solving skills.
+                                    Technical Support Specialist for NHS Track & Trace campaign, requiring excellent verbal and written communication skills, as well as problem solving skills.
                                 </p>
                             </section>
                             <section className="mt-4 mb-8">
@@ -37,6 +37,13 @@ const Experience = () => {
                                 <h3 className="mb-2">NOVEMBER 2019 - NOVEMBER 2020</h3>
                                 <p className="ml-4">
                                     LQA Tester at Pole To Win, London. A fast-paced work environment with a focus on teamwork.
+                                </p>
+                            </section>
+                            <section className="mt-4 mb-8">
+                                <h2>KNAPP AG, Hart bei Graz, Austria - Software Developer</h2>
+                                <h3 className="mb-2">APRIL 2016 - OCTOBER 2019</h3>
+                                <p className="ml-4">
+                                    Designed, developed, and optimised robust software applications. Recognised for strong analytical skills and the ability to troubleshoot complex software issues.
                                 </p>
                             </section>
                         </div>
