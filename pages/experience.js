@@ -12,8 +12,15 @@ const Experience = () => {
                         <h1 className="mb-2 inline-block is-underlined">Job Experience</h1>
                         <div className="ml-4">
                             <section className="mt-2 mb-8">
+                                <h2>Ocean Ecology, Plymouth, England - Software Developer</h2>
+                                <h3 className="mb-2">MARCH 2024 - PRESENT</h3>
+                                <p className="ml-4">
+                                    Leveraging a robust background in software development, including expertise in C#, ASP.NET Core, and database management, I excel in creating innovative solutions and adapting swiftly to new technologies. My experience in agile methodologies and handling large datasets, honed across various tech roles, positions me to contribute significantly to software development at Ocean Ecology.
+                                </p>
+                            </section>
+                            <section className="mt-2 mb-8">
                                 <h2>Calendar Club UK, Exeter, England - Software Developer</h2>
-                                <h3 className="mb-2">MAY 2022 - PRESENT</h3>
+                                <h3 className="mb-2">MAY 2022 - FEB 2024</h3>
                                 <p className="ml-4">
                                     Tasked with creating new and exciting in-house solutions, adding to existing projects and maintaining software I am constantly exposed to a variety of different technologies. This has made me adapt in getting familiar with the unfamiliar swiftly.
                                 </p>
