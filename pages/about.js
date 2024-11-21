@@ -24,7 +24,7 @@ const About = () => {
                         <p className="mb-4">
                             I am excited to bring my skills and expertise to a new opportunity where I can contribute to the development and success of innovative projects. Thank you for considering my application.
                         </p>
-                        <a className="btn btn-secondary mr-2 inline-block" href="/Sascha_Kuhness_CV_Jan_24.pdf" target="_blank">Check out my CV</a>
+                        <a className="btn btn-secondary mr-2 inline-block" href="/Sascha_Kuhness_CV.pdf" target="_blank">Check out my CV</a>
                     </section>
                 </div>
             </div>
